@@ -20,6 +20,6 @@ jobs:
 
       - name: code to s3
         run: |
-            aws s3 sync ./ s3://prac-gha-static-website/
-            -- exclude "*" \
-            -- include "index.html" 
+          aws s3 sync ./ s3://prac-gha-static-website/
+          -- exclude "*" \
+          -- include "index.html" 
